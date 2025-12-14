@@ -2,7 +2,7 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import AreasAtuacao from '@/components/AreasAtuacao';
-import SobreAdvogada from '@/components/SobreAdvogada';
+import SobreAdvogada from '@/components/components/SobreAdvogada'; // <--- CORREÇÃO AQUI (Se a pasta estiver como 'components/components')
 import Depoimentos from '@/components/Depoimentos';
 import Footer from '@/components/Footer';
 
@@ -29,8 +29,7 @@ export default function Home() {
         {/* 4. PROVA SOCIAL */}
         <Depoimentos />
         
-        {/* 5. SEÇÃO FINAL DE CONTATO (CTA) -- Reutilizando o Hero */}
-        {/* O CTA Final é a repetição do Hero, mas com foco em urgência */}
+        {/* 5. SEÇÃO FINAL DE CONTATO (CTA) */}
         <section id="contato" className="bg-dark-card py-24 md:py-32 text-center">
           <div className="container mx-auto px-5 max-w-2xl">
             <h2 className="font-cinzel text-white text-3xl md:text-4xl uppercase mb-4 relative">
