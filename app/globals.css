@@ -1,0 +1,29 @@
+/* app/globals.css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilo Global de Fundo e Fonte 
+  As classes 'rich-black', 'cinzel' e 'montserrat' são definidas em tailwind.config.js
+*/
+
+body {
+  /* Aplica o fundo principal (Rich Black) e a fonte de texto padrão (Montserrat)
+    A fonte cinzel será aplicada nos títulos com uma classe específica.
+  */
+  @apply bg-rich-black text-gray-200 font-montserrat;
+}
+
+/* Garante que a rolagem para as âncoras funcione corretamente 
+  (A altura da Navbar fixa deve ser descontada do scroll)
+*/
+section {
+  scroll-margin-top: 100px; /* Desconta a altura da Navbar */
+}
+
+/* Ajuste para o container: centraliza e garante o padding horizontal
+*/
+.container {
+  @apply mx-auto px-5;
+}
