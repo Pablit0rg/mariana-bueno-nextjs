@@ -2,8 +2,7 @@
 import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import AreasAtuacao from '@/components/AreasAtuacao';
-// CORREÇÃO: Removemos o "/components" extra do caminho
-import SobreAdvogada from '@/components/SobreAdvogada'; 
+import SobreAdvogada from '@/components/SobreAdvogada'; // Agora o caminho está limpo e correto
 import Depoimentos from '@/components/Depoimentos';
 import Footer from '@/components/Footer';
 
@@ -35,6 +34,19 @@ export default function Home() {
             <a 
               href="https://wa.me/5541997606069?text=Ol%C3%A1%20Dra.%20Mariana%2C%20preciso%20de%20atendimento%20jur%C3%ADdico%20priorit%C3%A1rio." 
               className="cta-button-gold big"
+              target="_blank" 
+              rel="noopener noreferrer"
+            >
+              Iniciar Atendimento Prioritário
+            </a>
+          </div>
+        </section>
+      </main>
+      
+      <Footer />
+    </>
+  );
+}              className="cta-button-gold big"
               target="_blank" 
               rel="noopener noreferrer"
             >
